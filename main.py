@@ -13,8 +13,8 @@ import json
 
 length_world = 101
 iterations = 100
-rand_space = 'y'
-rule_using = 161
+rand_space = 'n'
+rule_using = 0
 
 # проверка значения rand_space и создание относительно его начального заполнения
 if rand_space == 'n':
@@ -43,12 +43,12 @@ def print_row(registry, num):
             if s == 0:
                 print(' ', end=' ')
             elif s == 1:
-                print('#', end=' ')
+                print('■', end=' ')
         else:
             if s == 0:
                 print(' ', end='')
             elif s == 1:
-                print('#', end='')
+                print('■', end='')
     print('| '+str(num), end='')
     print()
 
